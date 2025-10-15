@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Taxi Data Explorer</title>
+  <link rel="stylesheet" href="Styles.css">
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Taxi Data Explorer</h1>
+  </header>
+
+  <section id="summary">
+    <div>Total Trips: <strong id="totalTrips">—</strong></div>
+    <div>Avg Duration (min): <strong id="avgDuration">—</strong></div>
+    <div>Vendor 1 Avg Speed: <strong id="vendor1Speed">—</strong></div>
+    <div>Vendor 2 Avg Speed: <strong id="vendor2Speed">—</strong></div>
+  </section>
+
+  <section id="charts">
+    <h2>Trips Over Time</h2>
+    <canvas id="tripsOverTimeChart" width="800" height="300"></canvas>
+
+    <h2>Average Speed by Passenger</h2>
+    <canvas id="avgSpeedByPassengerChart" width="800" height="300"></canvas>
+  </section>
+
+  <section id="table">
+    <h2>Recent Trips</h2>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Pickup Date</th><th>Distance</th><th>Fare</th><th>Payment</th></tr>
+      </thead>
+      <tbody id="tripsTableBody"></tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
