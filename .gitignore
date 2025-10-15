@@ -2,9 +2,7 @@
 Backend/Data/raw/train.csv
 Backend/Data/cleaned/train_cleaned.csv
 
-# Ignore entire raw/ and cleaned/ data directories (useful during development)
-Backend/Data/raw/
-Backend/Data/cleaned/
+
 
 # Ignore local SQLite DB created during development
 Backend/urban_mobility.db
