@@ -18,7 +18,7 @@ class TaxiDataExplorer {
     // Load summary stats from backend
     async loadSummary() {
         try {
-            const res = await fetch('http://127.0.0.1:5000/api/summary');
+            const res = await fetch('/api/summary');
             const data = await res.json();
 
 
@@ -40,7 +40,7 @@ class TaxiDataExplorer {
     // Load trips over time and populate line chart
     async loadTripsOverTime() {
         try {
-            const res = await fetch('http://127.0.0.1:5000/api/trips_over_time');
+            const res = await fetch('/api/trips_over_time');
             const trips = await res.json();
 
 
@@ -58,7 +58,7 @@ class TaxiDataExplorer {
     // Load average speed by passenger and populate bar chart
     async loadAvgSpeedByPassenger() {
         try {
-            const res = await fetch('http://127.0.0.1:5000/api/avg_speed_by_passenger');
+            const res = await fetch('/api/avg_speed_by_passenger');
             const speeds = await res.json();
 
 
