@@ -6,6 +6,10 @@ Backend/Data/cleaned/train_cleaned.csv
 Backend/Data/raw/
 Backend/Data/cleaned/
 
+# Keep .gitkeep placeholders tracked so directories remain visible on GitHub
+!Backend/Data/raw/.gitkeep
+!Backend/Data/cleaned/.gitkeep
+
 # Ignore local SQLite DB created during development
 Backend/urban_mobility.db
 
