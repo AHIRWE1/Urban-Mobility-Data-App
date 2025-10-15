@@ -3,7 +3,9 @@ import sqlite3
 import os
 from flask_cors import CORS
 
-app = Flask(__name__)
+# Serve frontend files (templates + static) from the Frontend directory
+FRONTEND_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Frontend')
+app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path='', template_folder=FRONTEND_DIR)
 CORS(app)
 
 # ✅ Build the correct absolute path to the database
@@ -17,8 +19,8 @@ def get_db_connection():
 
 @app.route('/')
 def index():
-    return jsonify({"message": "Urban Mobility API is running!"})
-    # return render_template('index.html')
+    # Serve the frontend index.html
+    return render_template('index.html')
 
 # --- Summary API ---
 @app.route('/api/summary')
