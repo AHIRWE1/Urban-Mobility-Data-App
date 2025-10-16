@@ -35,14 +35,25 @@ Trips Over Time: http://127.0.0.1:5000/api/trips_over_time
 
 Average Speed by Passenger: http://127.0.0.1:5000/api/avg_speed_by_passenger
 
+Click on the http://127.0.0.1:5000/ while the server is running to tak you to the frontend dashboard
+
 ✅ Notes
 
 Ensure data/raw/train.csv exists before running the pipeline.
 
+Each contributor should:
+
+Download the train.csv file here https://surli.cc/payzlg
+
+Create their own local versions of these files.
+
+Ensure these train.csv file remain ignored in Git commits
+
+Ensure that train.csv exists in the data/raw/ folder before running
+
 The cleaned data is stored in data/cleaned/train_cleaned.csv.
 
 The database file urban_mobility.db is auto-generated after running load_data_to_db.py.
-
 
 
  .gitignore Setup
@@ -52,8 +63,7 @@ train_cleaned.csv
 data/cleaned/train_cleaned.csv
 urban_mobility.db
 
-Each contributor should:
-Create their own local versions of these files.
 
 
-Ensure these remain ignored in Git commits.
+
+.
