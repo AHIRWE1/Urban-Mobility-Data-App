@@ -6,7 +6,7 @@ import pandas as pd
 
 # Paths
 db_path = "urban_mobility.db"
-csv_path = "data/cleaned/train_cleaned.csv"
+csv_path = "Data/cleaned/train_cleaned.csv"
 
 
 

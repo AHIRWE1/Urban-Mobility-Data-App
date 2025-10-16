@@ -7,9 +7,9 @@ import os
 
 
 # --- File paths (relative for portability) ---
-raw_file = "data/raw/train.csv"
-cleaned_file = "data/cleaned/train_cleaned.csv"
-log_dir = "data/cleaned/"
+raw_file = "Data/raw/train.csv"
+cleaned_file = "Data/cleaned/train_cleaned.csv"
+log_dir = "Data/cleaned/"
 
 
 
